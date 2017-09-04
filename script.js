@@ -315,7 +315,20 @@ function drawGraph() {
             }
         });
 
-    graph.nodeRect = graph.node.append('rect')
+    graph.nodeRect = 
+    graph.node
+    .filter(d => { return d.type === 'Freizeit'})
+    .append('circle')
+        .attr('r', 20)
+        .attr('stroke', function(d) {
+            return graph.strokeColor(d.categoryKey);
+        })
+        .attr('fill', function(d) {
+            return graph.fillColor(d.categoryKey);
+        })
+    graph.node
+    .filter(d => { return d.type !== 'Freizeit'})
+    .append('rect')
         .attr('rx', 5)
         .attr('ry', 5)
         .attr('stroke', function(d) {
