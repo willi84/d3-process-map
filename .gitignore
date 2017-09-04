@@ -1,5 +1,4 @@
 TODO
 node_modules/
-data/*
 !data/default/
 !data/les-mis/
