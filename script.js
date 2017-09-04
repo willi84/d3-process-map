@@ -13,6 +13,8 @@ $(function() {
     }
 console.log(config.jsonUrl);
     d3.json(config.jsonUrl, function(data) {
+
+        
         if (data.errors.length) {
             alert('Data error(s):\n\n' + data.errors.join('\n'));
             return;
