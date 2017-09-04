@@ -1,0 +1,22 @@
+{
+  "name": "mc-data",
+  "version": "1.0.0",
+  "description": "show data of metacollect projects",
+  "main": "colorbrewer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willi84/mc-data.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willi84/mc-data/issues"
+  },
+  "homepage": "https://github.com/willi84/mc-data#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
